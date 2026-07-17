@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex | Pokémon API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>⚡ Pokédex</h1>
+        <p>Encuentra cualquier Pokémon utilizando la PokéAPI</p>
+    </header>
+    <main>
+        <!-- BUSCADOR -->
+        <section class="busqueda">
+            <h2>Buscar Pokémon</h2>
+            <div class="contenedor-input">
+                <input type="text" id="pokemon-name" placeholder="Ej: Pikachu">
+                <button id="btn-search">
+                    🔍 Buscar
+                </button>
+            </div>
+            <article id="resultado">
+                <div class="mensaje-inicial">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+                        alt="Pokeball">
+                    <p>
+                        Busca un Pokémon para comenzar.
+                    </p>
+                </div>
+            </article>
+            <button id="btn-favorite">
+                ⭐ Guardar en favoritos
+            </button>
+        </section>
+        <!-- FAVORITOS -->
+        <section class="favoritos">
+            <div class="titulo-favoritos">
+                <h2>
+                    ❤️ Favoritos
+                </h2>
+                <button id="btn-clear-all">
+                    🗑 Vaciar
+                </button>
+            </div>
+            <ul id="favoritos">
+            </ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
